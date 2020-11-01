@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #ededed;
+}
+
+#form-container{
+    background-color: #cdcdcd;
+    border-radius: 20px;
+}
+
+#form-output{
+    background-color: #fff;
+}

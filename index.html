@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="utf-8">
+    <title>Hash Generator - Made by Diego Castagna</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Online free, fast and reliable hash generator made with love. It supports a good variety of hash generator functions.">
+    <meta name="keywords" content="hash,generator,diego,castagna,fast,made,php,source,code,password_hash">
+    <meta name="author" content="Diego Castagna">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/fontawesome.all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.m4d4y81.min.css"/>
+
+    <!-- Favicons -->
+    <link rel="icon" sizes="240x240" type="image/png" href="/assets/favicons/favicon.png"/>
+    <link rel="apple-touch-icon" sizes="128x128" href="/assets/favicons/favicon-128x128.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/favicon-152x152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/favicons/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/favicon-180x180.png">
+</head>
+<body>
+    <div class="container pt-5">
+        <div class="text-center pb-5">
+            <h1>Hash Generator</h1>
+            <p>If you ever need a free, fast and reliable hash generator, feel free to use this tool.</p>
+        </div>
+
+        <div class="border p-4" id="form-container">
+            <form action="hash.php" method="POST">
+                <div class="row">
+                    <div class="col-lg-2"><label class="font-weight-bold" for="form-language">Language</label></div>
+                    <div class="col-lg-3"><label class="font-weight-bold" for="form-function">Hash Function</label></div>
+                    <div class="col-lg-4"><label class="font-weight-bold" for="form-password">String</label></div>
+                    <div class="col-lg-3"><label class="font-weight-bold" for="form-option">Algorithm</label></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <select name="language" id="form-language" class="form-control">
+                            <option value="PHP">PHP</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3">
+                        <select name="function" id="form-function" class="form-control">
+                            <option value="password_hash">password_hash</option>
+                            <option value="hash">hash</option>
+                            <option value="crypt">crypt</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="text" name="password" id="form-password" placeholder="Write text.." class="form-control">
+                    </div>
+                    <div class="col-lg-3">
+                        <select name="option" id="form-option" class="form-control">
+                            <option value="PASSWORD_DEFAULT">PASSWORD_DEFAULT</option>
+                            <option value="PASSWORD_BCRYPT">PASSWORD_BCRYPT</option>
+                            <option value="PASSWORD_ARGON2I">PASSWORD_ARGON2I</option>
+                            <option value="PASSWORD_ARGON2ID">PASSWORD_ARGON2ID</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row pt-5">
+                <div class="col-lg-1 pt-2"><label class="font-weight-bold" for="form-type">Output: </label></div>
+                <figure class="col-lg-11 pt-2 pb-2 rounded border text-break" id="form-output">Nothing yet.</figure>
+            </div>
+        </div>
+
+        <p class="text-center pt-4 mb-1">Made with <i class="text-danger fas fa-heart"></i> by <a href="https://www.diegocastagna.com/en/" target="_blank">Diego Castagna</a></p>
+        <p class="text-center"><a href="https://github.com/UnwishingMoon/hash_generator" target="_blank">Source Code</a></p>
+    </div>
+
+    <!-- JS Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script async defer src="/assets/js/fontawesome.all.min.js"></script>
+    <script async defer src="assets/js/common.3m5h80g.min.js"></script>
+</body>
+</html>

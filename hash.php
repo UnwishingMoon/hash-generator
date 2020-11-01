@@ -49,7 +49,7 @@ switch ($action) {
         if($language == "PHP"){
 
             $optionPWD = PASSWORD_DEFAULT;
-            switch ($variable) {
+            switch ($option) {
                 case 'PASSWORD_DEFAULT':
                     $optionPWD = PASSWORD_DEFAULT;
                     break;

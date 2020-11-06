@@ -73,3 +73,8 @@ function get_hash(){
         });
     }
 }
+
+function copyText(){
+    $("#form-output").select();
+    document.execCommand("copy");
+}

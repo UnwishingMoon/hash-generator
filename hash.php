@@ -23,15 +23,12 @@ switch ($action) {
     case 'getOptions':
         switch ($_REQUEST["function"]) {
             case 'password_hash':
-                // password_hash
                 $resp = implode(",", array("PASSWORD_DEFAULT","PASSWORD_BCRYPT","PASSWORD_ARGON2I","PASSWORD_ARGON2ID"));
                 break;
             case 'hash':
-                // hash
                 $resp = implode(",", array("sha1", "sha224", "sha384", "sha256", "sha512", "md5", "ripemd128", "ripemd256", "whirlpool", "crc32", "crc32b", "crc32c"));
                 break;
             case 'crypt':
-                // crypt
                 $resp = implode(",", array("CRYPT_SHA512", "CRYPT_SHA256", "CRYPT_BLOWFISH", "CRYPT_MD5", "CRYPT_EXT_DES", "CRYPT_STD_DES"));
                 break;
             default:
@@ -66,15 +63,12 @@ switch ($action) {
 
             switch ($function) {
                 case 'password_hash':
-                    // password_hash
                     $resp = password_hash($password, $optionPWD);
                     break;
                 case 'hash':
-                    // hash
                     $resp = hash($option, $password);
                     break;
                 case 'crypt':
-                    // password_hash
                     $resp = crypt($password, $option);
                     break;
             }

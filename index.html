@@ -33,32 +33,29 @@
             <p>If you ever need a free, fast and reliable hash generator, feel free to use this tool.</p>
         </div>
 
-        <div class="border p-4" id="form-container">
+        <div class="border pl-4 pr-4 pb-4 pt-3" id="form-container">
             <form action="hash.php" method="POST">
                 <div class="row">
-                    <div class="col-lg-2"><label class="font-weight-bold" for="form-language">Language</label></div>
-                    <div class="col-lg-3"><label class="font-weight-bold" for="form-function">Hash Function</label></div>
-                    <div class="col-lg-4"><label class="font-weight-bold" for="form-password">String</label></div>
-                    <div class="col-lg-3"><label class="font-weight-bold" for="form-option">Algorithm</label></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 pt-2">
+                        <label class="font-weight-bold" for="form-language">Language</label>
                         <select name="language" id="form-language" class="form-control">
                             <option value="PHP">PHP</option>
                         </select>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 pt-2">
+                        <label class="font-weight-bold" for="form-function">Hash Function</label>
                         <select name="function" id="form-function" class="form-control">
                             <option value="password_hash">password_hash</option>
                             <option value="hash">hash</option>
                             <option value="crypt">crypt</option>
                         </select>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 pt-2">
+                        <label class="font-weight-bold" for="form-password">String</label>
                         <input type="text" name="password" id="form-password" placeholder="Write text.." class="form-control">
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 pt-2">
+                        <label class="font-weight-bold" for="form-option">Algorithm</label>
                         <select name="option" id="form-option" class="form-control">
                             <option value="PASSWORD_DEFAULT">PASSWORD_DEFAULT</option>
                             <option value="PASSWORD_BCRYPT">PASSWORD_BCRYPT</option>
@@ -70,8 +67,15 @@
             </form>
 
             <div class="row pt-5">
-                <div class="col-lg-1 pt-2"><label class="font-weight-bold" for="form-type">Output: </label></div>
-                <figure class="col-lg-11 pt-2 pb-2 rounded border text-break" id="form-output">Nothing yet.</figure>
+                <div class="col-lg-1 pt-2">
+                    <label class="font-weight-bold" for="form-type">Output: </label>
+                </div>
+                <div class="col-lg-9">
+                    <textarea class="form-control p-2" id="form-output" rows="1">Nothing yet.</textarea>
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="p-2 btn btn-primary" onclick="copyText()">Copy to clipboard</button>
+                </div>
             </div>
         </div>
 
@@ -84,6 +88,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script async defer src="/assets/js/fontawesome.all.min.js"></script>
-    <script async defer src="assets/js/common.3m5h80g.min.js"></script>
+    <script async defer src="assets/js/common.3m5h80g.js"></script>
 </body>
 </html>

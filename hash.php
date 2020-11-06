@@ -18,8 +18,8 @@ switch ($action) {
                 $resp = "-";
                 break;
         }
-
         break;
+
     case 'getOptions':
         switch ($_REQUEST["function"]) {
             case 'password_hash':
@@ -35,8 +35,8 @@ switch ($action) {
                 $resp = "-";
                 break;
         }
-
         break;
+
     case 'getPwd':
         $language = $_REQUEST["language"];
         $function = $_REQUEST["function"];
@@ -73,9 +73,7 @@ switch ($action) {
                     break;
             }
         }
-
         break;
 }
-
 echo $resp;
 ?>
